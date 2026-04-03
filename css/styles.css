@@ -134,17 +134,20 @@ ul { list-style: none; }
 
 /* Image logo */
 .nav-logo-img img {
-  height: 48px;
+  height: 44px;
   width: auto;
   display: block;
-  /* Makes white background invisible on dark navbar */
-  mix-blend-mode: multiply;
-  filter: brightness(0) invert(1);
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px 10px;
 }
 .nav-logo-img--footer img {
   height: 52px;
-  filter: brightness(0) invert(1);
-  mix-blend-mode: normal;
+  width: auto;
+  display: block;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
   margin-bottom: 1rem;
 }
 
