@@ -1,1 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- =====================================================
+       SEO & Meta — UPDATE THESE before going live
+       ===================================================== -->
+  <title>Kuhni Landscaping | Professional Lawn & Landscape Services</title>
+  <meta name="description" content="Kuhni Landscaping provides professional lawn care, landscape design, and outdoor living services. Serving [YOUR SERVICE AREA]. Call today for a free estimate!" />
+  <meta name="keywords" content="landscaping, lawn care, landscape design, [YOUR CITY], [YOUR STATE]" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- =====================================================
+       Reveal animation styles (tiny, inline for performance)
+       ===================================================== -->
+  <style>
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    [data-reveal].revealed {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <!-- LOGO: change "Kuhni" or add an <img> tag for a logo image -->
+      <a href="#hero" class="nav-logo">Kuhni <span>Landscaping</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Free Estimate</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+  <section id="hero">
+    <div class="hero-bg"></div><!-- Background photo set in css/styles.css -->
+
+    <div class="container hero-content">
+      <span class="section-label">Licensed &amp; Insured</span>
+
+      <!-- HEADLINE: customize this tagline -->
+      <h1>Beautiful Lawns,<br>Built to Last.</h1>
+
+      <!-- SUBHEADLINE: customize your service area -->
+      <p>
+        Professional landscaping and lawn care serving
+        <strong>[YOUR CITY / AREA]</strong>.
+        Quality work, reliable service, and results you'll love.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+        <a href="#gallery" class="btn btn-outline">View Our Work</a>
+      </div>
+
+      <!-- Trust badges — edit or remove as needed -->
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <!-- ✓ icon -->
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>Free Estimates</span>
+        </div>
+        <div class="hero-badge">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <!-- UPDATE: years in business -->
+          <span>[X]+ Years Experience</span>
+        </div>
+        <div class="hero-badge">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>Fully Insured</span>
+        </div>
+        <div class="hero-badge">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>100% Satisfaction Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       SERVICES
+       ===================================================== -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header" data-reveal>
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">
+          From routine maintenance to full landscape transformations —
+          we handle it all with care and expertise.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- -----------------------------------------------
+             SERVICE CARDS
+             To add a service: copy one card block below.
+             To remove: delete the entire <div class="service-card"> block.
+             To change icon: replace the emoji in .service-icon.
+             ----------------------------------------------- -->
+
+        <div class="service-card" data-reveal>
+          <div class="service-icon">🌿</div>
+          <h3>Lawn Mowing &amp; Maintenance</h3>
+          <p>Weekly or bi-weekly mowing, edging, and blowing to keep your lawn looking sharp all season.</p>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-icon">🌳</div>
+          <h3>Tree &amp; Shrub Trimming</h3>
+          <p>Expert pruning to promote healthy growth and keep your trees and shrubs looking their best.</p>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-icon">🏡</div>
+          <h3>Landscape Design</h3>
+          <p>Custom landscape plans that transform your outdoor space into something you'll love to come home to.</p>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-icon">🍂</div>
+          <h3>Spring &amp; Fall Cleanup</h3>
+          <p>Seasonal leaf removal, bed cleanup, and prep work to get your property ready for the next season.</p>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-icon">🪨</div>
+          <h3>Mulching &amp; Edging</h3>
+          <p>Fresh mulch and clean edges give your beds a polished, finished look that lasts.</p>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-icon">❄️</div>
+          <h3>Snow Removal</h3>
+          <p>Reliable snow plowing and salting to keep your driveway and walkways safe all winter long.</p>
+        </div>
+
+        <!-- ADD MORE SERVICES HERE -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT
+       ===================================================== -->
+  <section id="about">
+    <div class="container about-inner">
+
+      <div class="about-image-wrap" data-reveal>
+        <!-- -----------------------------------------------
+             ABOUT IMAGE
+             Replace the src below with a real photo of
+             your team, truck, or a great finished project.
+             ----------------------------------------------- -->
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+          alt="Kuhni Landscaping team at work"
+          loading="lazy"
+        />
+        <!-- Years-in-business badge — update the number -->
+        <div class="about-badge">
+          <span class="num">[X]+</span>
+          <span class="label">Years Serving<br>the Community</span>
+        </div>
+      </div>
+
+      <div class="about-text" data-reveal>
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">Locally Owned &amp; Family Operated</h2>
+
+        <!-- ABOUT PARAGRAPH: customize this with your own story -->
+        <p class="section-subtitle">
+          Kuhni Landscaping has been caring for lawns and landscapes in
+          <strong>[YOUR CITY / AREA]</strong> since <strong>[YEAR FOUNDED]</strong>.
+          We're a family-owned business that takes pride in treating every property
+          like our own — delivering quality work on time, every time.
+        </p>
+
+        <!-- CHECKLIST: edit or add bullet points -->
+        <ul class="about-checklist">
+          <li>Licensed and fully insured for your peace of mind</li>
+          <li>Free, no-pressure estimates</li>
+          <li>Locally owned — we live in the communities we serve</li>
+          <li>Flexible scheduling to fit your life</li>
+          <li>Honest pricing with no hidden fees</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       GALLERY
+       ===================================================== -->
+  <section id="gallery">
+    <div class="container">
+
+      <div class="gallery-header" data-reveal>
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Recent Projects</h2>
+        <p class="section-subtitle">
+          Take a look at some of the properties we've transformed.
+        </p>
+      </div>
+
+      <!-- -----------------------------------------------
+           GALLERY IMAGES
+           Replace each src URL below with your own photos.
+           Recommended size: at least 800×600 px.
+           To add more photos: copy a <div class="gallery-item"> block.
+           ----------------------------------------------- -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75" alt="Landscaping project" loading="lazy" />
+          <div class="gallery-overlay">+</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=75" alt="Garden design" loading="lazy" />
+          <div class="gallery-overlay">+</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=75" alt="Lawn maintenance" loading="lazy" />
+          <div class="gallery-overlay">+</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&q=75" alt="Tree trimming" loading="lazy" />
+          <div class="gallery-overlay">+</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=75" alt="Mulching" loading="lazy" />
+          <div class="gallery-overlay">+</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=75" alt="Outdoor living" loading="lazy" />
+          <div class="gallery-overlay">+</div>
+        </div>
+
+      </div>
+
+      <div class="gallery-footer" data-reveal>
+        <!-- Optional: link to a dedicated gallery page if you add one -->
+        <p style="color:var(--text-mid); font-size:0.95rem;">
+          Want to see more? <a href="#contact" style="color:var(--green-mid); font-weight:600;">Contact us</a> to discuss your project.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       TESTIMONIALS
+       ===================================================== -->
+  <section id="testimonials">
+    <div class="container">
+
+      <div data-reveal>
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+
+      <!-- -----------------------------------------------
+           TESTIMONIALS
+           Replace the quotes, names, and locations below
+           with real reviews from your customers
+           (Google, Facebook, word-of-mouth, etc.).
+           ----------------------------------------------- -->
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <blockquote>
+            "[CUSTOMER REVIEW — paste a real 2-4 sentence Google or Facebook review here]"
+          </blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">[A]</div><!-- Replace letter with customer's initial -->
+            <div>
+              <div class="reviewer-name">[Customer Name]</div>
+              <div class="reviewer-location">[City, State]</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <blockquote>
+            "[CUSTOMER REVIEW — paste a real 2-4 sentence Google or Facebook review here]"
+          </blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">[B]</div>
+            <div>
+              <div class="reviewer-name">[Customer Name]</div>
+              <div class="reviewer-location">[City, State]</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <blockquote>
+            "[CUSTOMER REVIEW — paste a real 2-4 sentence Google or Facebook review here]"
+          </blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar">[C]</div>
+            <div>
+              <div class="reviewer-name">[Customer Name]</div>
+              <div class="reviewer-location">[City, State]</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT
+       ===================================================== -->
+  <section id="contact">
+    <div class="container">
+
+      <div style="margin-bottom:3rem;" data-reveal>
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Request a Free Estimate</h2>
+        <p class="section-subtitle">
+          Fill out the form and we'll get back to you within 24 hours.
+          Prefer to call? We'd love to hear from you.
+        </p>
+      </div>
+
+      <div class="contact-inner">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info" data-reveal>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <!-- UPDATE: replace with real phone number -->
+              <a href="tel:+1XXXXXXXXXX" class="contact-item-value">(XXX) XXX-XXXX</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <!-- UPDATE: replace with real email -->
+              <a href="mailto:info@kuhnilandscaping.net" class="contact-item-value">info@kuhnilandscaping.net</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Service Area</div>
+              <!-- UPDATE: list your service cities/counties -->
+              <div class="contact-item-value">[City], [City], and surrounding areas</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-item-label">Business Hours</div>
+              <!-- UPDATE: your actual hours -->
+              <div class="contact-item-value">Mon–Fri: 7am – 6pm<br>Sat: 8am – 4pm</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Contact Form -->
+        <form class="contact-form" id="contactForm" data-reveal>
+          <h3>Send Us a Message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="john@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option>Lawn Mowing &amp; Maintenance</option>
+              <option>Tree &amp; Shrub Trimming</option>
+              <option>Landscape Design</option>
+              <option>Spring / Fall Cleanup</option>
+              <option>Mulching &amp; Edging</option>
+              <option>Snow Removal</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" placeholder="Describe what you're looking for — property size, specific needs, timeline, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <span class="nav-logo">Kuhni <span>Landscaping</span></span>
+          <!-- SHORT TAGLINE -->
+          <p>
+            Professional landscaping and lawn care serving
+            [YOUR AREA]. Locally owned, community proud.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Lawn Mowing</a></li>
+            <li><a href="#services">Tree &amp; Shrub Trimming</a></li>
+            <li><a href="#services">Landscape Design</a></li>
+            <li><a href="#services">Seasonal Cleanup</a></li>
+            <li><a href="#services">Snow Removal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <!-- UPDATE with real info -->
+            <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
+            <li><a href="mailto:info@kuhnilandscaping.net">info@kuhnilandscaping.net</a></li>
+            <li><a href="#contact">Get a Free Estimate</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <!-- UPDATE: current year auto-updates via JS below -->
+        <span>© <span id="year"></span> Kuhni Landscaping. All rights reserved.</span>
+        <span>Designed by <a href="#">[Your Name / Studio]</a></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
