@@ -26,36 +26,32 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-/* ---------- Contact form submission ---------- */
+/* ---------- Contact form — Netlify Forms submission ---------- */
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  // -------------------------------------------------------
-  // TO MAKE THE FORM ACTUALLY SEND EMAILS:
-  // Option 1 (easiest): Sign up at https://formspree.io,
-  //   create a form, and change the fetch URL below to
-  //   'https://formspree.io/f/YOUR_FORM_ID'
-  //
-  // Option 2: Use Netlify Forms — add data-netlify="true"
-  //   to the <form> tag and deploy on Netlify (free).
-  //
-  // Option 3: Connect your own backend/email service.
-  // -------------------------------------------------------
-
-  const btn = contactForm.querySelector('.form-submit');
+  const btn  = contactForm.querySelector('.form-submit');
   btn.textContent = 'Sending…';
-  btn.disabled = true;
+  btn.disabled    = true;
 
-  // Simulated success — replace with real fetch() call
-  setTimeout(() => {
-    btn.textContent = 'Message Sent!';
-    contactForm.reset();
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-    }, 3000);
-  }, 1000);
+  fetch('/', {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body:    new URLSearchParams(new FormData(contactForm)).toString()
+  })
+    .then(() => {
+      btn.textContent = '✓ Message Sent!';
+      contactForm.reset();
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.disabled    = false;
+      }, 4000);
+    })
+    .catch(() => {
+      btn.textContent = 'Error — please call us directly';
+      btn.disabled    = false;
+    });
 });
 
 /* ---------- Smooth-scroll offset for fixed navbar ---------- */

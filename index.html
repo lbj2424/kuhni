@@ -428,7 +428,11 @@
         </div>
 
         <!-- Contact Form -->
-        <form class="contact-form" id="contactForm" data-reveal>
+        <form class="contact-form" id="contactForm" data-reveal
+              name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+          <!-- Netlify spam filter (hidden, do not remove) -->
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none;"><input name="bot-field" /></p>
           <h3>Send Us a Message</h3>
 
           <div class="form-row">
