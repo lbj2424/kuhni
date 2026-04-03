@@ -195,7 +195,7 @@ ul { list-style: none; }
      Replace the URL below with your own hero photo.
      Recommended: a wide landscape shot of your best work.
      ------------------------------------------------------- */
-  background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80');
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.35;
